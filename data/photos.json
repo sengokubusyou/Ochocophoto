@@ -1,4 +1,16 @@
 {
   "version": 1,
-  "photos": []
+  "photos": [
+    {
+      "id": "mue1koiv-aab1debb",
+      "filename": "DSC04302.jpg",
+      "title": "DSC04302",
+      "event": "にっぽんど真ん中祭り",
+      "date": "2026-08-29",
+      "bytes": 2198309,
+      "originalPath": "photos/mue1koiv-aab1debb.jpg",
+      "thumbnailPath": "thumbnails/mue1koiv-aab1debb.jpg",
+      "addedAt": "2026-09-23T11:50:54.855Z"
+    }
+  ]
 }
