@@ -6,8 +6,10 @@
     <meta name="theme-color" content="#102534" />
     <meta name="description" content="よさこい演者の写真を閲覧・保存できるギャラリー。" />
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' blob: data:; connect-src 'self' https://api.github.com; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
-    <title>よさこい写真帖</title>
+    <title>あみちゃんまんの幸せアルバム</title>
+    <link rel="icon" type="image/png" href="./assets/img_ponponsuki.png" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./responsive.css" />
     <script src="./site-config.js" defer></script>
     <script type="module" src="./app.mjs"></script>
   </head>
@@ -15,8 +17,8 @@
     <header class="site-header">
       <div class="shell header-inner">
         <a class="brand" href="./" aria-label="ギャラリーの先頭へ">
-          <span class="brand-mark" aria-hidden="true">舞</span>
-          <span class="brand-text"><strong>よさこい写真帖</strong><small>YOSAKOI PHOTO ARCHIVE</small></span>
+          <img class="brand-icon" src="./assets/img_ponponsuki.png" alt="" width="52" height="52" />
+          <span class="brand-text"><strong>あみちゃんまんの幸せアルバム</strong><small>YOSAKOI PHOTO ARCHIVE</small></span>
         </a>
         <button id="openUpload" class="header-action" type="button"><span aria-hidden="true">＋</span> 写真を追加</button>
       </div>
@@ -26,10 +28,10 @@
       <section class="intro" aria-labelledby="galleryTitle">
         <div class="intro-copy">
           <p class="eyebrow"><span class="eyebrow-line"></span> YOSAKOI / PHOTO GALLERY</p>
-          <h1 id="galleryTitle">踊りの記録</h1>
-          <p id="galleryDescription" class="intro-description">演者の写真をまとめて閲覧・保存できます。</p>
+          <h1 id="galleryTitle">おちょこの記録</h1>
+          <p id="galleryDescription" class="intro-description">おちょこの写真をまとめて閲覧・保存できます。</p>
         </div>
-        <div class="intro-accent" aria-hidden="true"><span>一瞬を、<br />手元に。</span><i></i></div>
+        <div class="hero-mascot"><img src="./assets/img_ponponsuki.png" alt="ポンポンを持って踊る緑色のキャラクター" width="588" height="582" /></div>
       </section>
 
       <section class="gallery-section" aria-label="写真一覧">
@@ -43,7 +45,7 @@
         <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
         <div id="gallery" class="gallery-grid" aria-live="polite"></div>
         <div id="emptyState" class="empty-state" hidden>
-          <div class="empty-symbol" aria-hidden="true">舞</div>
+          <img class="empty-icon" src="./assets/img_ponponsuki.png" alt="" width="84" height="84" />
           <h2>写真はまだありません</h2>
           <p>写真が追加されると、ここに一覧で表示されます。</p>
         </div>

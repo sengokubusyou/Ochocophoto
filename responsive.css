@@ -1,0 +1,121 @@
+/* The supplied character is used as the main visual, the header icon, and the favicon. */
+.brand-icon {
+  display: block;
+  flex: none;
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.eyebrow,
+.gallery-count .small-label { color: #f487bc; }
+.eyebrow-line { background: #f487bc; }
+.header-action span { color: #92d6a1; }
+.primary-button { background: #c43c85; }
+.primary-button:hover:not(:disabled) { background: #a42f6e; }
+.photo-open:focus-visible,
+.drop-zone:focus-within { outline-color: #e44d9c; }
+
+.intro {
+  position: relative;
+  align-items: center;
+  gap: 32px;
+  min-height: 350px;
+  padding-top: 32px;
+  padding-bottom: 0;
+}
+.intro-copy {
+  min-width: 0;
+  padding-bottom: 32px;
+}
+.intro h1 { overflow-wrap: anywhere; }
+.hero-mascot {
+  flex: 0 0 min(31vw, 370px);
+  align-self: stretch;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+}
+.hero-mascot::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: min(29vw, 320px);
+  aspect-ratio: 1;
+  bottom: 14px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(91, 181, 146, .18), rgba(91, 181, 146, 0) 70%);
+}
+.hero-mascot img {
+  display: block;
+  width: min(31vw, 370px);
+  height: auto;
+  max-height: 335px;
+  object-fit: contain;
+  object-position: bottom;
+}
+.empty-icon {
+  display: block;
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .intro { min-height: 305px; }
+  .hero-mascot { flex-basis: 270px; }
+  .hero-mascot img { width: 270px; max-height: 285px; }
+  .hero-mascot::before { width: 240px; }
+}
+
+@media (max-width: 640px) {
+  .brand-icon { width: 43px; height: 43px; }
+  .brand { gap: 7px; min-width: 0; }
+  .brand-text { min-width: 0; }
+  .brand-text strong { font-size: 15px; line-height: 1.25; overflow-wrap: anywhere; }
+  .brand-text small { display: none; }
+  .header-action { flex: none; min-height: 42px; }
+
+  .intro {
+    display: block;
+    min-height: 0;
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+  .intro-copy { padding-bottom: 0; }
+  .intro h1 { font-size: clamp(31px, 10vw, 42px); margin-bottom: 9px; }
+  .intro-description { max-width: 28em; line-height: 1.65; }
+  .hero-mascot {
+    width: 168px;
+    height: 165px;
+    margin: 3px 5px 0 auto;
+  }
+  .hero-mascot img { width: 168px; max-height: 165px; }
+  .hero-mascot::before { width: 160px; bottom: 0; }
+  .gallery-section { padding-bottom: 56px; }
+  .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .photo-open { aspect-ratio: 3 / 4; }
+  .photo-dialog { width: 100vw; height: 100dvh; max-height: 100dvh; }
+  .lightbox-image-wrap { height: calc(100dvh - 170px); }
+  .upload-dialog { width: calc(100vw - 16px); max-height: calc(100dvh - 16px); }
+  .drop-zone { min-height: 128px; }
+}
+
+@media (max-width: 380px) {
+  .header-inner { gap: 5px; }
+  .brand-icon { width: 39px; height: 39px; }
+  .brand-text strong { font-size: 13px; }
+  .header-action { font-size: 11px; padding-inline: 8px; }
+  .gallery-toolbar { flex-wrap: wrap; gap: 12px; }
+  .gallery-toolbar .primary-button { margin-left: auto; }
+  .photo-info { gap: 3px; }
+  .card-save { width: 30px; height: 30px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
