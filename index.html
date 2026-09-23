@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#102534" />
+    <meta name="description" content="よさこい演者の写真を閲覧・保存できるギャラリー。" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' blob: data:; connect-src 'self' https://api.github.com; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+    <title>よさこい写真帖</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./site-config.js" defer></script>
+    <script type="module" src="./app.mjs"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="./" aria-label="ギャラリーの先頭へ">
+          <span class="brand-mark" aria-hidden="true">舞</span>
+          <span class="brand-text"><strong>よさこい写真帖</strong><small>YOSAKOI PHOTO ARCHIVE</small></span>
+        </a>
+        <button id="openUpload" class="header-action" type="button"><span aria-hidden="true">＋</span> 写真を追加</button>
+      </div>
+    </header>
+
+    <main class="shell">
+      <section class="intro" aria-labelledby="galleryTitle">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> YOSAKOI / PHOTO GALLERY</p>
+          <h1 id="galleryTitle">踊りの記録</h1>
+          <p id="galleryDescription" class="intro-description">演者の写真をまとめて閲覧・保存できます。</p>
+        </div>
+        <div class="intro-accent" aria-hidden="true"><span>一瞬を、<br />手元に。</span><i></i></div>
+      </section>
+
+      <section class="gallery-section" aria-label="写真一覧">
+        <div class="gallery-toolbar">
+          <div class="gallery-count"><span class="small-label">PHOTOS</span><strong id="photoCount">—</strong><span>枚の写真</span></div>
+          <button id="downloadAll" class="primary-button" type="button" disabled>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v3h16v-3"/></svg>
+            すべて保存 <span class="button-suffix">.zip</span>
+          </button>
+        </div>
+        <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+        <div id="gallery" class="gallery-grid" aria-live="polite"></div>
+        <div id="emptyState" class="empty-state" hidden>
+          <div class="empty-symbol" aria-hidden="true">舞</div>
+          <h2>写真はまだありません</h2>
+          <p>写真が追加されると、ここに一覧で表示されます。</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="shell footer-inner"><span>YOSAKOI PHOTO ARCHIVE</span><span>写真を選んで、思い出を保存。</span></div></footer>
+
+    <dialog id="photoDialog" class="photo-dialog" aria-label="写真を拡大表示">
+      <div class="lightbox-top"><span id="photoPosition"></span><button id="closePhoto" class="icon-button light" type="button" aria-label="閉じる">×</button></div>
+      <div class="lightbox-image-wrap"><button id="prevPhoto" class="nav-button previous" type="button" aria-label="前の写真">‹</button><img id="largePhoto" alt="" /><button id="nextPhoto" class="nav-button next" type="button" aria-label="次の写真">›</button></div>
+      <div class="lightbox-bottom"><div><strong id="photoTitle"></strong><span id="photoMeta"></span></div><button id="downloadPhoto" class="light-download" type="button">この写真を保存 <span aria-hidden="true">↓</span></button></div>
+    </dialog>
+
+    <dialog id="uploadDialog" class="upload-dialog" aria-labelledby="uploadTitle">
+      <div class="upload-panel">
+        <div class="dialog-head"><div><p class="eyebrow">MANAGE PHOTOS</p><h2 id="uploadTitle">写真を追加</h2></div><button id="closeUpload" class="icon-button" type="button" aria-label="閉じる">×</button></div>
+        <p class="dialog-help">選んだ写真はGitHubのリポジトリに保存され、公開サイトに反映されます。</p>
+        <form id="uploadForm">
+          <label class="field-label" for="photoFiles">写真を選択 <span>JPEG / PNG / WebP、1枚25MBまで</span></label>
+          <div id="dropZone" class="drop-zone"><input id="photoFiles" type="file" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp" multiple required /><span class="drop-icon" aria-hidden="true">＋</span><strong>クリックして選択、またはここにドロップ</strong><small>複数枚をまとめて追加できます</small></div>
+          <div id="selectedFiles" class="selected-files" aria-live="polite"></div>
+          <div class="two-fields"><label class="field-label" for="eventName">イベント名 <span>任意</span><input id="eventName" type="text" maxlength="80" placeholder="例：高知よさこい祭り" /></label><label class="field-label" for="shootDate">撮影日 <span>任意</span><input id="shootDate" type="date" /></label></div>
+          <div class="auth-section"><div class="auth-title"><span class="lock-glyph" aria-hidden="true">●</span><strong>管理者認証</strong></div><p>対象リポジトリの Contents 書き込み権限を持つ Fine-grained token を入力してください。トークンは保存されません。</p><label class="field-label" for="githubToken">GitHub トークン<input id="githubToken" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="github_pat_…" required /></label><div id="repoDetails" class="repo-details"></div></div>
+          <div id="uploadStatus" class="upload-status" role="status" aria-live="polite" hidden></div>
+          <div class="form-actions"><button id="cancelUpload" class="secondary-button" type="button">キャンセル</button><button id="submitUpload" class="primary-button" type="submit">写真を登録 <span aria-hidden="true">↗</span></button></div>
+        </form>
+      </div>
+    </dialog>
+  </body>
+</html>
