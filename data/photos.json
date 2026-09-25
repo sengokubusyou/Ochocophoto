@@ -2,6 +2,94 @@
   "version": 1,
   "photos": [
     {
+      "id": "mugr3b13-5ecae6cb",
+      "filename": "DSC05557.jpg",
+      "title": "DSC05557",
+      "event": "長浜あざいあっぱれ祭り",
+      "date": "2026-09-05",
+      "bytes": 1118311,
+      "originalPath": "photos/mugr3b13-5ecae6cb.jpg",
+      "thumbnailPath": "thumbnails/mugr3b13-5ecae6cb.jpg",
+      "addedAt": "2026-09-25T09:20:46.854Z"
+    },
+    {
+      "id": "mugr3e2v-424dcb4c",
+      "filename": "DSC05955.jpg",
+      "title": "DSC05955",
+      "event": "長浜あざいあっぱれ祭り",
+      "date": "2026-09-05",
+      "bytes": 1498803,
+      "originalPath": "photos/mugr3e2v-424dcb4c.jpg",
+      "thumbnailPath": "thumbnails/mugr3e2v-424dcb4c.jpg",
+      "addedAt": "2026-09-25T09:20:50.479Z"
+    },
+    {
+      "id": "mugr3gvj-8d7d86ed",
+      "filename": "DSC06155.jpg",
+      "title": "DSC06155",
+      "event": "長浜あざいあっぱれ祭り",
+      "date": "2026-09-05",
+      "bytes": 384036,
+      "originalPath": "photos/mugr3gvj-8d7d86ed.jpg",
+      "thumbnailPath": "thumbnails/mugr3gvj-8d7d86ed.jpg",
+      "addedAt": "2026-09-25T09:20:52.752Z"
+    },
+    {
+      "id": "mugr3imo-a863d379",
+      "filename": "DSC06200.jpg",
+      "title": "DSC06200",
+      "event": "長浜あざいあっぱれ祭り",
+      "date": "2026-09-05",
+      "bytes": 588571,
+      "originalPath": "photos/mugr3imo-a863d379.jpg",
+      "thumbnailPath": "thumbnails/mugr3imo-a863d379.jpg",
+      "addedAt": "2026-09-25T09:20:55.357Z"
+    },
+    {
+      "id": "mugr3kn1-645f0d9f",
+      "filename": "DSC06287.jpg",
+      "title": "DSC06287",
+      "event": "長浜あざいあっぱれ祭り",
+      "date": "2026-09-05",
+      "bytes": 953445,
+      "originalPath": "photos/mugr3kn1-645f0d9f.jpg",
+      "thumbnailPath": "thumbnails/mugr3kn1-645f0d9f.jpg",
+      "addedAt": "2026-09-25T09:20:58.454Z"
+    },
+    {
+      "id": "mugr3n12-4791d875",
+      "filename": "DSC06626.jpg",
+      "title": "DSC06626",
+      "event": "長浜あざいあっぱれ祭り",
+      "date": "2026-09-05",
+      "bytes": 561335,
+      "originalPath": "photos/mugr3n12-4791d875.jpg",
+      "thumbnailPath": "thumbnails/mugr3n12-4791d875.jpg",
+      "addedAt": "2026-09-25T09:21:00.595Z"
+    },
+    {
+      "id": "mugr3ooj-df10840d",
+      "filename": "DSC06670.jpg",
+      "title": "DSC06670",
+      "event": "長浜あざいあっぱれ祭り",
+      "date": "2026-09-05",
+      "bytes": 429754,
+      "originalPath": "photos/mugr3ooj-df10840d.jpg",
+      "thumbnailPath": "thumbnails/mugr3ooj-df10840d.jpg",
+      "addedAt": "2026-09-25T09:21:02.441Z"
+    },
+    {
+      "id": "mugr3q3t-09ecbba2",
+      "filename": "DSC06685.jpg",
+      "title": "DSC06685",
+      "event": "長浜あざいあっぱれ祭り",
+      "date": "2026-09-05",
+      "bytes": 1522501,
+      "originalPath": "photos/mugr3q3t-09ecbba2.jpg",
+      "thumbnailPath": "thumbnails/mugr3q3t-09ecbba2.jpg",
+      "addedAt": "2026-09-25T09:21:05.579Z"
+    },
+    {
       "id": "mufchqx5-d753ce16",
       "filename": "DSC04398.jpg",
       "title": "DSC04398",
