@@ -2,6 +2,127 @@
   "version": 1,
   "photos": [
     {
+      "id": "muk1f7kr-e9f10f6f",
+      "filename": "DSC07411.jpg",
+      "title": "DSC07411",
+      "event": "MAHA-G DANCE PARTY",
+      "date": "2026-09-28",
+      "bytes": 3383853,
+      "originalPath": "photos/muk1f7kr-e9f10f6f.jpg",
+      "thumbnailPath": "thumbnails/muk1f7kr-e9f10f6f.jpg",
+      "addedAt": "2026-09-27T16:33:16.828Z"
+    },
+    {
+      "id": "muk1fajg-17afe293",
+      "filename": "DSC07453.jpg",
+      "title": "DSC07453",
+      "event": "MAHA-G DANCE PARTY",
+      "date": "2026-09-28",
+      "bytes": 4355051,
+      "originalPath": "photos/muk1fajg-17afe293.jpg",
+      "thumbnailPath": "thumbnails/muk1fajg-17afe293.jpg",
+      "addedAt": "2026-09-27T16:33:21.532Z"
+    },
+    {
+      "id": "muk1fe64-5852176a",
+      "filename": "DSC07460.jpg",
+      "title": "DSC07460",
+      "event": "MAHA-G DANCE PARTY",
+      "date": "2026-09-28",
+      "bytes": 4473400,
+      "originalPath": "photos/muk1fe64-5852176a.jpg",
+      "thumbnailPath": "thumbnails/muk1fe64-5852176a.jpg",
+      "addedAt": "2026-09-27T16:33:25.890Z"
+    },
+    {
+      "id": "muk1fhj6-569e6207",
+      "filename": "DSC07472.jpg",
+      "title": "DSC07472",
+      "event": "MAHA-G DANCE PARTY",
+      "date": "2026-09-28",
+      "bytes": 4551166,
+      "originalPath": "photos/muk1fhj6-569e6207.jpg",
+      "thumbnailPath": "thumbnails/muk1fhj6-569e6207.jpg",
+      "addedAt": "2026-09-27T16:33:30.379Z"
+    },
+    {
+      "id": "muk1fkzv-befb6a31",
+      "filename": "DSC07491.jpg",
+      "title": "DSC07491",
+      "event": "MAHA-G DANCE PARTY",
+      "date": "2026-09-28",
+      "bytes": 5715121,
+      "originalPath": "photos/muk1fkzv-befb6a31.jpg",
+      "thumbnailPath": "thumbnails/muk1fkzv-befb6a31.jpg",
+      "addedAt": "2026-09-27T16:33:35.164Z"
+    },
+    {
+      "id": "muk1foos-1bb793b3",
+      "filename": "DSC07527.jpg",
+      "title": "DSC07527",
+      "event": "MAHA-G DANCE PARTY",
+      "date": "2026-09-28",
+      "bytes": 1964320,
+      "originalPath": "photos/muk1foos-1bb793b3.jpg",
+      "thumbnailPath": "thumbnails/muk1foos-1bb793b3.jpg",
+      "addedAt": "2026-09-27T16:33:38.407Z"
+    },
+    {
+      "id": "muk1fr6v-7243dc4b",
+      "filename": "DSC07532.jpg",
+      "title": "DSC07532",
+      "event": "MAHA-G DANCE PARTY",
+      "date": "2026-09-28",
+      "bytes": 3342186,
+      "originalPath": "photos/muk1fr6v-7243dc4b.jpg",
+      "thumbnailPath": "thumbnails/muk1fr6v-7243dc4b.jpg",
+      "addedAt": "2026-09-27T16:33:41.609Z"
+    },
+    {
+      "id": "muk1ftnt-551daad2",
+      "filename": "DSC07548.jpg",
+      "title": "DSC07548",
+      "event": "MAHA-G DANCE PARTY",
+      "date": "2026-09-28",
+      "bytes": 7266588,
+      "originalPath": "photos/muk1ftnt-551daad2.jpg",
+      "thumbnailPath": "thumbnails/muk1ftnt-551daad2.jpg",
+      "addedAt": "2026-09-27T16:33:47.697Z"
+    },
+    {
+      "id": "muk1fycx-e9b210c6",
+      "filename": "DSC07557.jpg",
+      "title": "DSC07557",
+      "event": "MAHA-G DANCE PARTY",
+      "date": "2026-09-28",
+      "bytes": 7768974,
+      "originalPath": "photos/muk1fycx-e9b210c6.jpg",
+      "thumbnailPath": "thumbnails/muk1fycx-e9b210c6.jpg",
+      "addedAt": "2026-09-27T16:33:52.772Z"
+    },
+    {
+      "id": "muk1g29w-a0233309",
+      "filename": "DSC07581.jpg",
+      "title": "DSC07581",
+      "event": "MAHA-G DANCE PARTY",
+      "date": "2026-09-28",
+      "bytes": 4316750,
+      "originalPath": "photos/muk1g29w-a0233309.jpg",
+      "thumbnailPath": "thumbnails/muk1g29w-a0233309.jpg",
+      "addedAt": "2026-09-27T16:33:56.491Z"
+    },
+    {
+      "id": "muk1g557-fc0d526d",
+      "filename": "DSC07608.jpg",
+      "title": "DSC07608",
+      "event": "MAHA-G DANCE PARTY",
+      "date": "2026-09-28",
+      "bytes": 4709691,
+      "originalPath": "photos/muk1g557-fc0d526d.jpg",
+      "thumbnailPath": "thumbnails/muk1g557-fc0d526d.jpg",
+      "addedAt": "2026-09-27T16:34:00.678Z"
+    },
+    {
       "id": "muiidq1i-9521ab41",
       "filename": "DSC07134.jpg",
       "title": "DSC07134",
